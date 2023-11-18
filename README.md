@@ -22,10 +22,21 @@ reddit.com
 !reddit.com/r/MachineLearning
 ```
 
+You can also add a regex to catch multiple urls:
+
+```
+youtube.com$ // only block homepage
+```
+
 Choose how to resolve blocked site: **Close Tab**, or **Show Blocked info page**.
 
 **Blocked info page** shows what _url_ was blocked, based on which _rule_ it was blocked, and optionally a blocked count over a chosen period of time:
 _All Time_, _This Month_, _This Week_, or _Today_.
+
+## Test and deployment
+
+- `yarn test`
+- `yarn __rmrf-dist __no-emit __build-chrome ` -for some reason pure build gave an error [TODO]
 
 ## Privacy notice
 
